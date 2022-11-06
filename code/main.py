@@ -1,6 +1,8 @@
 import pygame, sys
 from settings import *
 from player import Player
+from car import Car
+
 
 # basic setup
 pygame.init()
@@ -13,6 +15,7 @@ all_sprites = pygame.sprite.Group()
 
 # sprites
 player = Player((600, 400), all_sprites)
+car = Car((100, 100), all_sprites)
 
 # game loop
 while True:
